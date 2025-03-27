@@ -20,7 +20,6 @@ A static webpage built with HTML and CSS to promote a conference, providing esse
 ## Setup  
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/conference-webpage.git
-
+git clone https://github.com/eleypie/ConferenceWebpage.git
 # Open the file in a browser
 open index.html
