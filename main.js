@@ -1,4 +1,7 @@
-let lastScroll = 0;
+
+/**
+ *
+ * let lastScroll = 0;
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function() {
@@ -13,4 +16,11 @@ window.addEventListener("scroll", function() {
     }
     
     lastScroll = currentScroll;
+});
+ *
+ */
+
+document.querySelector('.hamburger').addEventListener('click', function() {
+    const navMenu = document.querySelector('.nav-menu');
+    navMenu.classList.toggle('active');
 });

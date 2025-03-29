@@ -4,28 +4,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-    <title>TechFrontiers 2025</title>
+    <title>TechFrontiers2025</title>
     <script src="main.js" defer></script>
 
     <body>
         <header class="header">
             <div class="header-content">
-            <a href="#" class="logo"><i class="ri-bubble-chart-fill"></i></i> <span class="logo-name">TechFrontiers2025</span></a>
-            <nav>
-                <ul class="nav-menu">
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#speakers" class="nav-link">Speakers</a></li>
-                    <li class="nav-item"><a href="#venue" class="nav-link">Venue</a></li>
-                    <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
-                    <li class="nav-item"><a href="#registration" class="btn-register">Register</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
+                <a href="#" class="logo">
+                    <i class="ri-bubble-chart-fill"></i>
+                    <span class="logo-name">TechFrontiers2025</span>
+                </a>
+                <button class="hamburger" aria-label="Toggle navigation">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+                <nav>
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#speakers" class="nav-link">Speakers</a></li>
+                        <li class="nav-item"><a href="#venue" class="nav-link">Venue</a></li>
+                        <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
+                        <li class="nav-item"><a href="#registration" class="btn-register">Register</a></li> <!-- Moved inside the nav-menu -->
+                    </ul>
+                </nav>
+            </div>
         </header>
 
         <main>
@@ -34,106 +37,130 @@
             <section id="home" class="hero">
                 <div class="container">
                     <div class="hero-content">
-                <h1>TechFrontiers 2025</h1>
-                <span class="hero-date"><h2>SMX PASAY,  15 - 17 APRIL, 2025</h2></span>
-                <p>Join the most influential tech conference of the year. Connect with industry leaders, discover cutting-edge innovations, and shape the future of technology.</p>
-                
-                <div class="hero-btn-group">
-                    <a href="#regustration" class="btn-register">REGISTER NOW</a>
-                    <a href="#about" class="btn-overview">LEARN MORE</a>
+                        <h1>TechFrontiers2025</h1>
+                        <p class="hero-date">SMX PASAY, 15 - 17 APRIL, 2025</p> <!-- Moved h2 outside of span -->
+                        <p>Join the most influential tech conference of the year. Connect with industry leaders, discover cutting-edge innovations, and shape the future of technology.</p>
+                        
+                        <div class="hero-btn-group">
+                            <a href="#registration" class="btn-register">REGISTER NOW</a>
+                            <a href="#about" class="btn-overview">LEARN MORE</a>
+                        </div>
+                        
+                        <a href="#about" class="scroll-indicator" aria-label="Scroll down to learn more">
+                            <i class="ri-arrow-down-circle-fill"></i>
+                        </a>
+                    </div>
                 </div>
-                <a href="#about" class="scroll-down"><i class="ri-arrow-down-circle-fill"></i></a>
-            </div>
-            </div>
             </section>
             
-            <! --about section-->
 
         <!--=============================== ABOUT    =============================-->
-        
-        
-            <section id="about" class="section-container">
+            <section id="about" class="container">
                 <div class="section-title"><h2>CONFERENCE OVERVIEW</h2></div>
                 <div class="section-description"><p>Innovate, Elevate, Dominate – The Future Begins Here.</p></div>
-                <div class="about-content">
-                    <div class="Introduction">
-                        <h3>Shaping the Future of Innovation</h3>
-                        <p>Welcome to TechFrontiers 2025—a premier three-day immersive experience showcasing the latest advancements in AI, cybersecurity, blockchain, and next-gen computing. This conference is designed for tech professionals, entrepreneurs, researchers, and students eager to stay ahead in the rapidly evolving digital landscape.</p>
-                        <p>With world-class speakers, hands-on workshops, and unparalleled networking opportunities, TechFrontiers 2025 is the ultimate platform to learn, connect, and shape the future of technology.</p>
+                <div class="container-row">
+                    <!-- Left Column: Text Content -->
+                    <div class="column">
+                        <div class="about-content">
+                            <div class="introduction">
+                                <h3>Shaping the Future of Innovation</h3>
+                                <p>Welcome to TechFrontiers 2025—a premier three-day immersive experience showcasing the latest advancements in AI, cybersecurity, blockchain, and next-gen computing. This conference is designed for tech professionals, entrepreneurs, researchers, and students eager to stay ahead in the rapidly evolving digital landscape.</p>
+                                <p>With world-class speakers, hands-on workshops, and unparalleled networking opportunities, TechFrontiers 2025 is the ultimate platform to learn, connect, and shape the future of technology.</p>
+                            </div>
+                
+                            <div class="key-benefits">
+                                <ul class="benefits-list">
+                                    <li class="feature-item">
+                                        <div class="feature-content">
+                                            <i class="ri-walk-fill"></i>
+                                            <h5>Stay Ahead of the Curve</h5>
+                                            <p>Insights from industry experts on emerging tech trends</p>
+                                        </div>
+                                    </li>
+                
+                                    <li class="feature-item">
+                                        <div class="feature-content">
+                                            <i class="ri-links-fill"></i>
+                                            <h5>Connect & Collaborate</h5>
+                                            <p>Network with like-minded professionals and innovators</p>
+                                        </div>
+                                    </li>
+                
+                                    <li class="feature-item">
+                                        <div class="feature-content">
+                                            <i class="ri-key-2-fill"></i>
+                                            <h5>Unlock New Opportunities</h5>
+                                            <p>Discover new opportunities in the world of technology</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="Key-benefits">
-                        <ul class="benefits-list">
-                            <li class="feature-item">
-                                <div class="feature-content">
-                                    <i class="ri-walk-fill"></i>
-                                    <h5>Stay Ahead of the Curve</h5>
-                                    <p>Insights from industry experts on emerging tech trends</p>
-                                </div>
-                            </li>
-
-                            <li class="feature-item">
-                                <div class="feature-content">
-                                    <i class="ri-links-fill"></i>
-                                    <h5>Connect & Collaborate</h5>
-                                    <p>Network with like-minded professionals and innovators</p>
-                                </div>
-                            </li>
-
-                            <li class="feature-item">
-                                <div class="feature-content">
-                                    <i class="ri-key-2-fill"></i>
-                                    <h5>Unlock New Opportunities</h5>
-                                    <p>Discover new opportunities in the world of technology</p>
-                                </div>
-                            </li>
-                            
-                        </ul>
+                
+                    <!-- Right Column: Image -->
+                    <div class="column">
+                        <div class="about-image">
+                            <img src="images/robot.png" alt="TechFrontiers 2025">
+                        </div>
                     </div>
-                    <div class="about-image">
-                        <img src="images/robot.png" alt="TechFrontiers 2025">
-                    </div>
+                </div>
             </section>
         
-            <!--=============================== SPEAKERS =============================-->
-        
-            <section id="speakers" class="section-container">
-                <div class="section-title"><h2>MEET THE EXPERTS</h2></div>
-                <div class="section-description"><p>The brightest minds in technology are here to share insights, inspire innovation, and shape the future.</p></div>
+            <section id="speakers" class="container">
+                <div class="section-title">
+                    <h2>MEET THE EXPERTS</h2>
+                </div>
                 <div class="speakers-content">
                     <div class="keynote-speaker">
-                        <div class="speaker-img"><img src="images/ethan reynolds.png" alt="Dr. Ethan Reynolds"></div>
-                        <div class="speaker-name"><h5>Keynote 1: Dr. Ethan Reynolds</h5></div>
-                        <div class="speaker-job"><p>Professor, MIT | AI Specialist & Ethics Advocate</p></div>
-                        <div class="speaker-bio"><p>Dr. Ethan Reynolds is a leading expert in artificial intelligence and ethics. He is a professor at MIT and the author of several books on AI and machine learning. Dr. Reynolds is a passionate advocate for responsible AI development and its impact on society.</p></div>
+                        <div class="speaker-img">
+                            <img src="images/ethan reynolds.png" alt="Dr. Ethan Reynolds">
+                        </div>
+                        <div class="speaker-details">
+                            <h5>Keynote 1: Dr. Ethan Reynolds</h5>
+                            <p class="job">Professor, MIT | AI Specialist & Ethics Advocate</p>
+                            <p class="bio">Dr. Reynolds is a leading expert in artificial intelligence ethics and machine learning. He recently developed an AI-driven ethical framework that helps ensure responsible AI deployment in industries like healthcare and finance.</p>
+                        </div>
                     </div>
                 
                     <div class="keynote-speaker">
-                        <div class="speaker-img"><img src="images/sophia carter.png" alt="Sophia Carter"></div>
-                        <div class="speaker-name"><h5>Keynote 2: Sophia Carter</h5></div>
-                        <div class="speaker-job"><p>CEO, CyberShield Solutions | Cybersecurity Strategist</p></div>
-                        <div class="speaker-bio"><p>A pioneer in next-gen cybersecurity, Sophia Carter has spearheaded research on quantum-resistant encryption to counter future cyber threats. Her latest breakthrough involves an AI-powered threat detection system that prevents real-time cyberattacks with 98% accuracy.</p></div>
+                        <div class="speaker-img">
+                            <img src="images/sophia carter.png" alt="Sophia Carter">
+                        </div>
+                        <div class="speaker-details">
+                            <h5>Keynote 2: Sophia Carter</h5>
+                            <p class="job">CEO, CyberShield Solutions | Cybersecurity Strategist</p>
+                            <p class="bio">A pioneer in next-gen cybersecurity, Sophia Carter has spearheaded research on quantum-resistant encryption to counter future cyber threats. Her latest breakthrough involves an AI-powered threat detection system that prevents real-time cyberattacks with 98% accuracy.</p>
+                        </div>
                     </div>
                 
                     <div class="keynote-speaker">
-                        <div class="speaker-img"><img src="images/rafael moreno.png" alt="Dr. Rafael Moreno<"></div>
-                        <div class="speaker-name"><h5>Keynote 3: Dr. Rafael Moreno</h5></div>
-                        <div class="speaker-job"><p>Blockchain Architect | Lead Developer, Web3 Innovations</p></div>
-                        <div class="speaker-bio"><p>Dr. Moreno is revolutionizing decentralized finance (DeFi) and Web3 infrastructure. His most recent project, MetaLedger, is a blockchain protocol enabling instant, zero-fee transactions, paving the way for scalable and eco-friendly decentralized applications.</p></div>
+                        <div class="speaker-img">
+                            <img src="images/rafael moreno.png" alt="Dr. Rafael Moreno">
+                        </div>
+                        <div class="speaker-details">
+                            <h5>Keynote 3: Dr. Rafael Moreno</h5>
+                            <p class="job">Blockchain Architect | Lead Developer, Web3 Innovations</p>
+                            <p class="bio">Dr. Moreno is revolutionizing decentralized finance (DeFi) and Web3 infrastructure. His most recent project, MetaLedger, is a blockchain protocol enabling instant, zero-fee transactions that pave the way for scalable and eco-friendly decentralized applications.</p>
+                        </div>
                     </div>
-
+            
                     <div class="keynote-speaker">
-                        <div class="speaker-img"><img src="images/eva sinclair.png" alt="Ava Sinclair<"></div>
-                        <div class="speaker-name"><h5>Keynote 4: Ava Sinclair</h5></div>
-                        <div class="speaker-job"><p>Tech Futurist & Founder, NeuroSync Labs</p></div>
-                        <div class="speaker-bio"><p>Ava Sinclair is at the forefront of human-computer interaction. Her team recently unveiled NeuroSync, a brain-interface technology that allows users to control digital devices with neural signals—bringing us closer to a future where thoughts can seamlessly interact with machines.</p></div>
+                        <div class="speaker-img">
+                            <img src="images/eva sinclair.png" alt="Ava Sinclair">
+                        </div>
+                        <div class="speaker-details">
+                            <h5>Keynote 4: Ava Sinclair</h5>
+                            <p class="job">Tech Futurist & Founder, NeuroSync Labs</p>
+                            <p class="bio">Ava Sinclair is at the forefront of human-computer interaction. Her team recently unveiled NeuroSync, a brain-interface technology that allows users to control digital devices with neural signals—bringing us closer to a future where thoughts can seamlessly interact with machines.</p>
+                        </div>
                     </div>
                 </div>
             </section>
 
             <!--=============================== VENUE =============================-->
         
-            <section id="venue" class="section-container">
+            <section id="venue" class="container">
                 <div class="section-title"><h2>CONFERENCE LOCATION </h2></div>
                 <div class="section-description"><p>The Perfect Venue for Innovation, Networking, and Groundbreaking Ideas</p></div>
                 <div class="venue-content">
@@ -190,7 +217,7 @@
 
             <!--=============================== SCHEDULE =============================-->
 
-            <section id="venue" class="section-container">
+            <section id="venue" class="container">
                 <div class="section-title"><h2>CONFERENCE TIMELINE </h2></div>
                 <div class="section-description"><p>The Perfect Venue for Innovation, Networking, and Groundbreaking Ideas</p></div>
                 <div class="timeline-content">
@@ -410,12 +437,12 @@
                 </div>
             </section>
             
-            <!--=============================== PRICING =============================-->
-            <section id="pricing" class="registration-packages">
+            <!--=============================== registration =============================-->
+            <section id="registration" class="registration-packages">
                 <div class="section-title"><h2>Join Us at TechFrontiers 2025</h2></div>
                 <div class="section-description"><p>Secure your spot at the most anticipated tech event of the year</p></div>
-                <div class="pricing-content">
-                    <div class="pricing-buttons">
+                <div class="registration-content">
+                    <div class="registration-buttons">
                         <a href="#" class="btn">Standard Pass - Php599</a>
                         <a href="#" class="btn">VIP Pass - Php999</a>
                     </div>
