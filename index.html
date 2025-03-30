@@ -23,7 +23,7 @@
                     <span class="hamburger"></span>
                 </button>
         
-                <nav class="primary-navigation">
+                <nav class="primary-navigation" data-visible="false">
                     <ul class="nav-list">
                         <li><a href="#about" class="nav-link hover-underline">About</a></li>
                         <li><a href="#speakers" class="nav-link hover-underline">Speakers</a></li>
@@ -153,8 +153,8 @@
             <!--=============================== SPEAKERS    =============================-->
             <section id="speakers" class="speakers-cards">
                 <div class="section-header">
-                    <h2>MEET THE EXPERTS</h2>
-                    <p>Learn From The Best</p>
+                    <h2 class="section-title">MEET THE EXPERTS</h2>
+                    <p class="section-tagline">Learn From The Best</p>
                 </div>
 
                 <div class="speaker-cards-container">
@@ -237,7 +237,6 @@
                 <div class="section-header">
                     <h2 class="section-title">CONFERENCE LOCATION</h2>
                     <p class="section-tagline">The Perfect Venue for Innovation, Networking, and Groundbreaking Ideas</p>
-                    <div class="section-divider"></div>
                 </div>
 
                 <div class="venue-container">
@@ -313,7 +312,6 @@
                 <div class="section-header">
                     <h2 class="section-title">CONFERENCE TIMELINE</h2>
                     <p class="section-tagline">Three Days of Innovation, Learning, and Networking</p>
-                    <div class="section-divider"></div>
                 </div>
 
                 <div class="schedule-container">
@@ -725,7 +723,7 @@
                             <li><i class="ri-checkbox-circle-fill"></i> Conference materials</li>
                             <li><i class="ri-checkbox-circle-fill"></i> Networking opportunities</li>
                         </ul>
-                        <a href="#" class="register-btn standard-btn">Register Now</a>
+                        <a href="form.html" class="register-btn standard-btn">Register Now</a>
                     </div>
 
                     <!-- VIP Pass -->
@@ -744,7 +742,7 @@
                             <li><i class="ri-checkbox-circle-fill"></i> Premium conference swag</li>
                             <li><i class="ri-checkbox-circle-fill"></i> Priority workshop registration</li>
                         </ul>
-                        <a href="#" class="register-btn vip-btn">Register Now</a>
+                        <a href="form.html" class="register-btn vip-btn">Register Now</a>
                     </div>
 
                     <!-- Group Option -->
@@ -761,7 +759,7 @@
                             <li><i class="ri-checkbox-circle-fill"></i> Team networking opportunities</li>
                             <li><i class="ri-checkbox-circle-fill"></i> Bulk registration processing</li>
                         </ul>
-                        <a href="#" class="register-btn group-btn">Register Team</a>
+                        <a href="form.html" class="register-btn group-btn">Register Team</a>
                     </div>
                 </div>
 
@@ -861,6 +859,23 @@
                     </div>
                 </div>
             </footer>
-        </main>       
+        </main>
+        <script>
+            const mobileToggle = document.querySelector('.mobile-toggle');
+            const primaryNav = document.querySelector('.primary-navigation');
+            
+            mobileToggle.addEventListener('click', () => {
+                const isVisible = primaryNav.classList.contains('active');
+                
+                // Toggle nav visibility
+                primaryNav.classList.toggle('active');
+                
+                // Toggle hamburger animation
+                mobileToggle.classList.toggle('active');
+                
+                // Update aria attribute
+                mobileToggle.setAttribute('aria-expanded', !isVisible);
+            });
+            </script>       
     </body>
 </head>
