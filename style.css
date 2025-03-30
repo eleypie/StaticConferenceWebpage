@@ -74,8 +74,6 @@ h5 {
     font-size: 1rem;
 }
 
-
-
 /*----------  SECTION  ----------*/
 
 .section-header {
@@ -110,7 +108,6 @@ section:nth-of-type(even) {
     box-sizing: border-box; 
 }
 
-/* Responsive Adjustments for Sections */
 @media (max-width: 768px) {
     section:nth-of-type(even) {
         height: auto;
@@ -174,7 +171,6 @@ section:nth-of-type(even) {
 .logo-year {
     color: #e74c3c;
 }
-
 
 /*----------  NAVIGATION  ----------*/
 .primary-navigation {
@@ -269,7 +265,6 @@ section:nth-of-type(even) {
 .hamburger::after {
     top: 8px;
 }
-
 
 /*----------  HERO  ----------*/
 .hero {
@@ -561,7 +556,6 @@ section:nth-of-type(even) {
     }
 }
 
-
 /*----------  ABOOUT  ----------*/
 #about {
     padding: 5rem 0;
@@ -740,10 +734,7 @@ section:nth-of-type(even) {
     
 }
     
-
 /*----------  SPEAKERS  ----------*/
-
-
 .speakers-cards {
     padding: 4rem 2rem;
     background: #f8fafc;
@@ -853,10 +844,7 @@ section:nth-of-type(even) {
     }
 }
 
-
 /*----------  VENUE  ----------*/
-
-
 .venue-section {
     padding: 5rem 0;
     background: var(--next-white);
@@ -1083,7 +1071,6 @@ section:nth-of-type(even) {
     }
 }
 
-
 /*----------  SCHEDULE  ----------*/
 .schedule-section {
     padding: 5rem 0;
@@ -1224,7 +1211,6 @@ section:nth-of-type(even) {
         font-size: 1.8rem;
     }
 }
-
 
 /*----------  REGISTATION  ----------*/
 .registration-section {
