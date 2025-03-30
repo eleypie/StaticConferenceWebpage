@@ -434,7 +434,7 @@ section:nth-of-type(even) {
     bottom: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    color: #2c3e50;
+    color:rgb(255, 255, 255);
     font-size: 1.5rem;
     text-decoration: none;
     animation: bounce 2s infinite;
