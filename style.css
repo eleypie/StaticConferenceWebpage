@@ -436,7 +436,6 @@ section:nth-of-type(even) {
     50% { transform: translateY(-20px); }
 }
 
-/* Scroll Indicator */
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -697,7 +696,7 @@ section:nth-of-type(even) {
         justify-content: center;
         align-items: center;
         position: absolute;
-        right: 1.5rem; /* Matches your header padding */
+        right: 1.5rem; 
         top: 50%;
         transform: translateY(-50%);
         width: 46px;
@@ -720,7 +719,6 @@ section:nth-of-type(even) {
         opacity: 0.9;
     }
 
-    /* Logo-Adjacent Positioning */
     .logo {
         position: relative;
         left: 1.5rem;
@@ -729,7 +727,7 @@ section:nth-of-type(even) {
     }
 
     .mobile-toggle[aria-expanded="true"] ~ .logo {
-        transform: translateX(-10px); /* Logo shifts left when menu opens */
+        transform: translateX(-10px);
     }
 
     .mobile-toggle[aria-expanded="true"] {
@@ -751,12 +749,10 @@ section:nth-of-type(even) {
         background: var(--primary-color);
     }
 
-    /* Bounce Effect on Touch */
     .mobile-toggle:active {
         transform: translateY(-50%) scale(0.92);
     }
 
-    /* Micro-interaction: Lines stretch slightly on hover */
     @media (hover: hover) {
         .mobile-toggle:hover .toggle-line:nth-child(1) {
             transform: translateY(-1px);
@@ -956,28 +952,27 @@ section:nth-of-type(even) {
     }
     
     .hero-grid.container .hero-description {
-        font-size: 0.8rem; /* Slightly smaller */
+        font-size: 0.8rem; 
         margin: 0.5rem 0rem;
-        max-width: 28ch; /* Narrower text measure */
+        max-width: 28ch; 
         text-align: left;
     }
     
     .hero-image {
         position: absolute;
         mid-width: 20px;
-        max-width: 200px; /* Reduced from 240px */
+        max-width: 200px; 
         margin-top: -22rem;
         margin-left: 8rem;
         margin-bottom: 1rem;
     }
     
     .cta-button {
-        font-size: 0.9rem; /* Reduced from 0.95rem */
-        padding: 0.7rem 1.2rem; /* More compact */
-        min-height: 42px; /* Still touch-friendly */
+        font-size: 0.9rem; 
+        padding: 0.7rem 1.2rem;
+        min-height: 42px; 
     }
-    
-    /* Further simplify decorative elements */
+
      .tech-ring {
         display:none;
         
@@ -1043,7 +1038,6 @@ section:nth-of-type(even) {
         opacity: 0.9;
     }
 
-    /* Logo-Adjacent Positioning */
     .logo {
         position: relative;
         left: 1.5rem;
@@ -1052,7 +1046,7 @@ section:nth-of-type(even) {
     }
 
     .mobile-toggle[aria-expanded="true"] ~ .logo {
-        transform: translateX(-10px); /* Logo shifts left when menu opens */
+        transform: translateX(-10px); 
     }
 
     .mobile-toggle[aria-expanded="true"] {
@@ -1074,12 +1068,11 @@ section:nth-of-type(even) {
         background: var(--primary-color);
     }
 
-    /* Bounce Effect on Touch */
+
     .mobile-toggle:active {
         transform: translateY(-50%) scale(0.92);
     }
 
-    /* Micro-interaction: Lines stretch slightly on hover */
     @media (hover: hover) {
         .mobile-toggle:hover .toggle-line:nth-child(1) {
             transform: translateY(-1px);
