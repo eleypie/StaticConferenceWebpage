@@ -8,78 +8,114 @@
     <script src="main.js" defer></script>
 
     <body>
-        <header class="header">
-            <div class="header-container">
-                <a href="#" class="logo">
-                    <i class="fas fa-bolt"></i>
-                    <span class="logo-text"><span class="logo-primary">Tech</span>Summit</span>
-                </a>
-        
-                <button class="mobile-toggle">
-                    <div class="hamburger"></div>
-                </button>
-        
-                <nav class="primary-navigation" data-visible="false">
-                    <ul class="nav-list">
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#speakers" class="nav-link">Speakers</a></li>
-                        <li><a href="#venue" class="nav-link">Venue</a></li>
-                        <li><a href="form.html" class="nav-link nav-button">Get Tickets</a></li>
-                    </ul>
-                </nav>
+<!-- ===================== HEADER ===================== -->
+<header class="header">
+    <div class="header-container container">
+        <div class="logo-container">
+        <a href="#" class="logo" aria-label="TechSummit Home">
+            <div class="logo-icon">
+                <i class="ri-cpu-line"></i> 
             </div>
-        </header>
-        
-        
-        <main>
-            <!-- ===================== HERO SECTION ===================== -->
-            <section class="hero" id="home">
-                <div class="hero-container">
-                    <div class="hero-content">
-                        <h1 class="hero-title">
-                            <span class="title-line">Where Technology</span>
-                            <span class="title-line">Meets the Future</span>
-                        </h1>
-                        
-                        <div class="hero-meta">
-                            <p class="hero-date">
-                                <i class="ri-calendar-event-fill"></i>
-                                April 15-17, 2025
-                            </p>
-                            <p class="hero-location">
-                                <i class="ri-map-pin-2-fill"></i>
-                                SMX Convention Center, Pasay
-                            </p>
-                        </div>
-                        
-                        <p class="hero-description">
-                            Join 5,000+ innovators at the most influential tech conference of the decade. Discover breakthroughs in AI, blockchain, and quantum computing.
-                        </p>
-                        
-                        <div class="hero-actions">
-                            <a href="#registration" class="primary-button">
-                                Secure Your Seat
-                                <i class="ri-arrow-right-line"></i>
-                            </a>
-                            <a href="#about" class="secondary-button">
-                                Explore Conference
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-visual">
-                        <div class="tech-circle"></div>
-                        <div class="hero-image">
-                            <img src="images/happy robot.png" alt="Tech innovation visualization">
-                        </div>
-                    </div>
+            <span class="logo-text">
+                <span class="logo-highlight">TechFrontiers2025</span>
+            </span>
+        </a>
+    </div>
+
+        <!-- Mobile toggle with animated lines -->
+        <button class="mobile-toggle" aria-expanded="false" aria-label="Menu">
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+            <span class="toggle-line"></span>
+        </button>
+
+        <!-- Navigation with hover effects -->
+        <nav class="primary-navigation">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link hover-underline">About</a></li>
+                <li><a href="#speakers" class="nav-link hover-underline">Speakers</a></li>
+                <li><a href="#schedule" class="nav-link hover-underline">Schedule</a></li>
+                <li><a href="#venue" class="nav-link hover-underline">Venue</a></li>
+                <li>
+                    <a href="form.html" class="nav-button pulse-button">
+                        <i class="ri-ticket-2-line"></i> Get Tickets
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ===================== HERO SECTION ===================== -->
+<section class="hero" id="home">
+    <div class="hero-grid container">
+        <!-- Content with staggered animation -->
+        <div class="hero-content">
+            <div class="hero-titles">
+                <h1 class="hero-title">
+                    <span class="title-line">Where <span class="text-gradient">Innovation</span></span>
+                    <span class="title-line">Meets <span class="text-gradient">Tomorrow</span></span>
+                </h1>
+                <p class="hero-subtitle">
+                    The premier tech conference of 2025
+                </p>
+            </div>
+
+            <!-- Meta info with icons -->
+            <div class="hero-meta">
+                <div class="meta-item">
+                    <i class="ri-calendar-event-fill"></i>
+                    <span class="info">April 15-17, 2025</span>
                 </div>
-                
-                <a href="#about" class="scroll-prompt" aria-label="Scroll down">
-                    <i class="ri-arrow-down-line"></i>
+                <div class="meta-item">
+                    <i class="ri-map-pin-2-fill"></i>
+                    <span class="info">SMX Convention Center, Pasay</span>
+                </div>
+                <div class="meta-item">
+                    <i class="ri-user-3-fill"></i>
+                    <span class="info">5,000+ Attendees</span>
+                </div>
+            </div>
+
+            <p class="hero-description">
+                Experience groundbreaking keynotes, hands-on workshops, and unparalleled networking with leaders in AI, blockchain, and quantum computing.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-actions">
+                <a href="#tickets" class="cta-button primary">
+                    <span>Secure Your Seat</span>
+                    <i class="ri-arrow-right-line"></i>
                 </a>
-            </section>
-        
+                <a href="#about" class="cta-button secondary">
+                    <span>Explore Agenda</span>
+                    <i class="ri-search-line"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Visual with floating animation -->
+        <div class="hero-visual">
+            <div class="tech-dots"></div>
+            <div class="tech-ring"></div>
+            <div class="hero-image">
+                <img src="images/happy robot.png" alt="Futuristic robot illustration" loading="lazy">
+            </div>
+            <div class="tech-badge floating">
+                <i class="ri-flashlight-fill"></i>
+                <span>AI-Powered Future</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll indicator with bounce animation -->
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+        <span>Explore More</span>
+    </a>
+</section>
         <!--=============================== ABOUT    =============================-->
         <section id="about">
             <div class="about-header">
