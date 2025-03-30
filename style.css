@@ -1622,3 +1622,8 @@ section:nth-of-type(even) {
         margin-left: 0;
     }
 }
+
+.legal-links {
+    margin-left: 0;
+}
+}
