@@ -10,30 +10,26 @@
     <body>
         <header class="header">
             <div class="header-container">
-                <div class="logo-container">
-                    <a href="#" class="logo">
-                        <i class="ri-cpu-fill"></i>
-                        <span class="logo-text">
-                            <span class="logo-primary">Tech</span>Frontiers<span class="logo-year">2025</span>
-                        </span>
-                    </a>
-                </div>
+                <a href="#" class="logo">
+                    <i class="fas fa-bolt"></i>
+                    <span class="logo-text"><span class="logo-primary">Tech</span>Summit</span>
+                </a>
         
-                <button class="mobile-toggle" aria-expanded="false" aria-label="Menu">
-                    <span class="hamburger"></span>
+                <button class="mobile-toggle">
+                    <div class="hamburger"></div>
                 </button>
         
                 <nav class="primary-navigation" data-visible="false">
                     <ul class="nav-list">
-                        <li><a href="#about" class="nav-link hover-underline">About</a></li>
-                        <li><a href="#speakers" class="nav-link hover-underline">Speakers</a></li>
-                        <li><a href="#venue" class="nav-link hover-underline">Venue</a></li>
-                        <li><a href="#schedule" class="nav-link hover-underline">Schedule</a></li>
-                        <li><a href="#registration" class="nav-button">Register Now</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#speakers" class="nav-link">Speakers</a></li>
+                        <li><a href="#venue" class="nav-link">Venue</a></li>
+                        <li><a href="#contact" class="nav-link nav-button">Get Tickets</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
+        
         
         <main>
             <!-- ===================== HERO SECTION ===================== -->
@@ -860,22 +856,5 @@
                 </div>
             </footer>
         </main>
-        <script>
-            const mobileToggle = document.querySelector('.mobile-toggle');
-            const primaryNav = document.querySelector('.primary-navigation');
-            
-            mobileToggle.addEventListener('click', () => {
-                const isVisible = primaryNav.classList.contains('active');
-                
-                // Toggle nav visibility
-                primaryNav.classList.toggle('active');
-                
-                // Toggle hamburger animation
-                mobileToggle.classList.toggle('active');
-                
-                // Update aria attribute
-                mobileToggle.setAttribute('aria-expanded', !isVisible);
-            });
-            </script>       
     </body>
 </head>

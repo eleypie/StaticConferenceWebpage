@@ -1,16 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".mobile-toggle");
+    const navMenu = document.querySelector(".primary-navigation");
 
-
+    toggleButton.addEventListener("click", function () {
+        const isVisible = navMenu.getAttribute("data-visible") === "true";
+        navMenu.setAttribute("data-visible", !isVisible);
+    });
+});
 
 // Tab functionality
 document.querySelectorAll('.day-tab').forEach(tab => {
     tab.addEventListener('click', () => {
-        // Remove active class from all tabs and schedules
         document.querySelectorAll('.day-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.day-schedule').forEach(s => s.classList.remove('active'));
-        
-        // Add active class to clicked tab and corresponding schedule
         tab.classList.add('active');
         document.getElementById(tab.dataset.day).classList.add('active');
     });
 });
-
