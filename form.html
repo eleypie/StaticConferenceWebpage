@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechFrontiers 2025 - Registration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #EE163A;
+            --white: #FFFFFF;
+            --next-white: #f8f9fa;
+            --pure-black-text: #000000;
+            --light-black-text: #444444;
+            --heading-font: 'Poppins', sans-serif;
+            --body-font: 'Inter', sans-serif;
+            --container-width: 1200px;
+            --section-spacing: 5rem;
+            --element-spacing: 1.5rem;
+        }
+
+        body {
+            color: var(--light-black-text);
+            font-family: var(--body-font);
+            line-height: 1.6;
+            font-size: 16px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+            background-color: var(--next-white);
+        }
+
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .registration-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .registration-header h1 {
+            font-family: var(--heading-font);
+            font-size: 2.5rem;
+            color: var(--pure-black-text);
+            margin-bottom: 1rem;
+        }
+
+        .registration-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .section-divider {
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 1.5rem auto;
+        }
+
+        .registration-form {
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 2.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            flex: 1;
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--body-font);
+            font-size: 1rem;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 2px rgba(238, 22, 58, 0.2);
+        }
+
+        .pass-type {
+            margin: 2rem 0;
+        }
+
+        .pass-options {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .pass-option {
+            flex: 1;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .pass-option:hover {
+            border-color: var(--primary-color);
+        }
+
+        .pass-option.selected {
+            border: 2px solid var(--primary-color);
+            background-color: rgba(238, 22, 58, 0.05);
+        }
+
+        .pass-option h3 {
+            font-family: var(--heading-font);
+            margin-top: 0;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0.5rem 0;
+        }
+
+        .early-bird {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .submit-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #d01230;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .pass-options {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-header">
+            <h1>TechFrontiers 2025 Registration</h1>
+            <p>Complete the form below to secure your spot at the most anticipated tech event of the year. Early bird pricing available until April 3, 2025.</p>
+            <div class="section-divider"></div>
+        </div>
+
+        <form class="registration-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company / Organization</label>
+                <input type="text" id="company">
+            </div>
+
+            <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <input type="text" id="job-title">
+            </div>
+
+            <div class="form-group pass-type">
+                <label>Select Your Pass Type</label>
+                <div class="pass-options">
+                    <div class="pass-option selected">
+                        <h3>Standard Pass</h3>
+                        <div class="price">₱5,999</div>
+                        <p class="early-bird">Early Bird: ₱4,999 (until April 3)</p>
+                        <ul>
+                            <li>Full 3-day conference access</li>
+                            <li>Keynote sessions</li>
+                            <li>Workshop participation</li>
+                        </ul>
+                    </div>
+                    <div class="pass-option">
+                        <h3>VIP Pass</h3>
+                        <div class="price">₱9,999</div>
+                        <p class="early-bird">Early Bird: ₱7,999 (until April 3)</p>
+                        <ul>
+                            <li>VIP seating at keynotes</li>
+                            <li>Exclusive networking dinner</li>
+                            <li>Meet & greet with speakers</li>
+                        </ul>
+                    </div>
+                    <div class="pass-option">
+                        <h3>Group Package</h3>
+                        <div class="price">₱4,499/person</div>
+                        <p class="early-bird">3+ attendees (Save 25%)</p>
+                        <ul>
+                            <li>Dedicated team seating</li>
+                            <li>Group discount</li>
+                            <li>Team networking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="special-requirements">Special Requirements</label>
+                <textarea id="special-requirements" rows="3"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="how-heard">How did you hear about TechFrontiers?</label>
+                <select id="how-heard">
+                    <option value="">Select an option</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="email">Email Newsletter</option>
+                    <option value="friend">Friend/Colleague</option>
+                    <option value="website">Website</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Complete Registration</button>
+
+            <div class="form-footer">
+                <p><i class="ri-alarm-warning-line"></i> Early bird pricing ends April 3, 2025</p>
+                <p><i class="ri-information-line"></i> Your information will be kept confidential</p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Simple script to handle pass selection
+        document.addEventListener('DOMContentLoaded', function() {
+            const passOptions = document.querySelectorAll('.pass-option');
+            
+            passOptions.forEach(option => {
+                option.addEventListener('click', function() {
+                    passOptions.forEach(opt => opt.classList.remove('selected'));
+                    this.classList.add('selected');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -9,514 +9,858 @@
 
     <body>
         <header class="header">
-            <div class="header-content">
-                <a href="#" class="logo">
-                    <i class="ri-bubble-chart-fill"></i>
-                    <span class="logo-name">TechFrontiers2025</span>
-                </a>
-                <button class="hamburger" aria-label="Toggle navigation">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+            <div class="header-container">
+                <div class="logo-container">
+                    <a href="#" class="logo">
+                        <i class="ri-cpu-fill"></i>
+                        <span class="logo-text">
+                            <span class="logo-primary">Tech</span>Frontiers<span class="logo-year">2025</span>
+                        </span>
+                    </a>
+                </div>
+        
+                <button class="mobile-toggle" aria-expanded="false" aria-label="Menu">
+                    <span class="hamburger"></span>
                 </button>
-                <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#speakers" class="nav-link">Speakers</a></li>
-                        <li class="nav-item"><a href="#venue" class="nav-link">Venue</a></li>
-                        <li class="nav-item"><a href="#schedule" class="nav-link">Schedule</a></li>
-                        <li class="nav-item"><a href="#registration" class="btn-register">Register</a></li> <!-- Moved inside the nav-menu -->
+        
+                <nav class="primary-navigation">
+                    <ul class="nav-list">
+                        <li><a href="#about" class="nav-link hover-underline">About</a></li>
+                        <li><a href="#speakers" class="nav-link hover-underline">Speakers</a></li>
+                        <li><a href="#venue" class="nav-link hover-underline">Venue</a></li>
+                        <li><a href="#schedule" class="nav-link hover-underline">Schedule</a></li>
+                        <li><a href="#registration" class="nav-button">Register Now</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-
+        
         <main>
-
-            <!--=============================== HERO =============================-->
-            <section id="home" class="hero">
-                <div class="container">
+            <!-- ===================== HERO SECTION ===================== -->
+            <section class="hero" id="home">
+                <div class="hero-container">
                     <div class="hero-content">
-                        <h1>TechFrontiers2025</h1>
-                        <p class="hero-date">SMX PASAY, 15 - 17 APRIL, 2025</p> <!-- Moved h2 outside of span -->
-                        <p>Join the most influential tech conference of the year. Connect with industry leaders, discover cutting-edge innovations, and shape the future of technology.</p>
+                        <h1 class="hero-title">
+                            <span class="title-line">Where Technology</span>
+                            <span class="title-line">Meets the Future</span>
+                        </h1>
                         
-                        <div class="hero-btn-group">
-                            <a href="#registration" class="btn-register">REGISTER NOW</a>
-                            <a href="#about" class="btn-overview">LEARN MORE</a>
+                        <div class="hero-meta">
+                            <p class="hero-date">
+                                <i class="ri-calendar-event-fill"></i>
+                                April 15-17, 2025
+                            </p>
+                            <p class="hero-location">
+                                <i class="ri-map-pin-2-fill"></i>
+                                SMX Convention Center, Pasay
+                            </p>
                         </div>
                         
-                        <a href="#about" class="scroll-indicator" aria-label="Scroll down to learn more">
-                            <i class="ri-arrow-down-circle-fill"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            
-
-        <!--=============================== ABOUT    =============================-->
-            <section id="about" class="container">
-                <div class="section-title"><h2>CONFERENCE OVERVIEW</h2></div>
-                <div class="section-description"><p>Innovate, Elevate, Dominate – The Future Begins Here.</p></div>
-                <div class="container-row">
-                    <!-- Left Column: Text Content -->
-                    <div class="column">
-                        <div class="about-content">
-                            <div class="introduction">
-                                <h3>Shaping the Future of Innovation</h3>
-                                <p>Welcome to TechFrontiers 2025—a premier three-day immersive experience showcasing the latest advancements in AI, cybersecurity, blockchain, and next-gen computing. This conference is designed for tech professionals, entrepreneurs, researchers, and students eager to stay ahead in the rapidly evolving digital landscape.</p>
-                                <p>With world-class speakers, hands-on workshops, and unparalleled networking opportunities, TechFrontiers 2025 is the ultimate platform to learn, connect, and shape the future of technology.</p>
-                            </div>
-                
-                            <div class="key-benefits">
-                                <ul class="benefits-list">
-                                    <li class="feature-item">
-                                        <div class="feature-content">
-                                            <i class="ri-walk-fill"></i>
-                                            <h5>Stay Ahead of the Curve</h5>
-                                            <p>Insights from industry experts on emerging tech trends</p>
-                                        </div>
-                                    </li>
-                
-                                    <li class="feature-item">
-                                        <div class="feature-content">
-                                            <i class="ri-links-fill"></i>
-                                            <h5>Connect & Collaborate</h5>
-                                            <p>Network with like-minded professionals and innovators</p>
-                                        </div>
-                                    </li>
-                
-                                    <li class="feature-item">
-                                        <div class="feature-content">
-                                            <i class="ri-key-2-fill"></i>
-                                            <h5>Unlock New Opportunities</h5>
-                                            <p>Discover new opportunities in the world of technology</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                        <p class="hero-description">
+                            Join 5,000+ innovators at the most influential tech conference of the decade. Discover breakthroughs in AI, blockchain, and quantum computing.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#registration" class="primary-button">
+                                Secure Your Seat
+                                <i class="ri-arrow-right-line"></i>
+                            </a>
+                            <a href="#about" class="secondary-button">
+                                Explore Conference
+                            </a>
                         </div>
                     </div>
-                
-                    <!-- Right Column: Image -->
-                    <div class="column">
-                        <div class="about-image">
-                            <img src="images/robot.png" alt="TechFrontiers 2025">
+                    
+                    <div class="hero-visual">
+                        <div class="tech-circle"></div>
+                        <div class="hero-image">
+                            <img src="images/happy robot.png" alt="Tech innovation visualization">
                         </div>
                     </div>
                 </div>
+                
+                <a href="#about" class="scroll-prompt" aria-label="Scroll down">
+                    <i class="ri-arrow-down-line"></i>
+                </a>
             </section>
         
-            <section id="speakers" class="container">
-                <div class="section-title">
-                    <h2>MEET THE EXPERTS</h2>
+        <!--=============================== ABOUT    =============================-->
+        <section id="about">
+            <div class="about-header">
+                <h2 class="section-title">CONFERENCE OVERVIEW</h2>
+                <p class="section-tagline">Innovate, Elevate, Dominate – The Future Begins Here.</p>
+            </div>
+        
+            <div class="about-container">
+                <!-- Text Content -->
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Shaping the Future of Innovation</h3>
+                        <p>Welcome to TechFrontiers 2025—a premier three-day immersive experience showcasing the latest advancements in AI, cybersecurity, blockchain, and next-gen computing. This conference is designed for tech professionals, entrepreneurs, researchers, and students eager to stay ahead in the rapidly evolving digital landscape.</p>
+                        <p>With world-class speakers, hands-on workshops, and unparalleled networking opportunities, TechFrontiers 2025 is the ultimate platform to learn, connect, and shape the future of technology.</p>
+                    </div>
+        
+                    <div class="benefits-grid">
+                        <!-- Benefit 1 -->
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <div class="benefit-icon">
+                                    <i class="ri-brain-fill"></i>
+                                </div>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Stay Ahead of the Curve</h4>
+                                <p>Insights from industry experts on emerging tech trends that will define the next decade of innovation.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Benefit 2 -->
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="ri-team-fill"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Connect & Collaborate</h4>
+                                <p>Network with 5,000+ like-minded professionals, innovators, and potential business partners.</p>
+                            </div>
+                        </div>
+        
+                        <!-- Benefit 3 -->
+                        <div class="benefit-card">
+                            <div class="benefit-icon">
+                                <i class="ri-lightbulb-flash-fill"></i>
+                            </div>
+                            <div class="benefit-content">
+                                <h4>Unlock New Opportunities</h4>
+                                <p>Discover career opportunities, investment prospects, and cutting-edge solutions.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="speakers-content">
-                    <div class="keynote-speaker">
-                        <div class="speaker-img">
+        
+                <!-- Image Content -->
+                <div class="about-visual">
+                    <div class="floating-image">
+                        <img src="images/announcement robot.png" alt="Tech Innovation" class="main-image">
+                        <div class="tech-badge">
+                            <i class="ri-cpu-line"></i> AI-Powered Future
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!--=============================== SPEAKERS    =============================-->
+            <section id="speakers" class="speakers-cards">
+                <div class="section-header">
+                    <h2>MEET THE EXPERTS</h2>
+                    <p>Learn From The Best</p>
+                </div>
+
+                <div class="speaker-cards-container">
+                    <!-- Speaker 1 -->
+                    <div class="speaker-card">
+                        <div class="card-image">
                             <img src="images/ethan reynolds.png" alt="Dr. Ethan Reynolds">
+                            <span class="keynote-badge">Keynote 1</span>
                         </div>
-                        <div class="speaker-details">
-                            <h5>Keynote 1: Dr. Ethan Reynolds</h5>
-                            <p class="job">Professor, MIT | AI Specialist & Ethics Advocate</p>
-                            <p class="bio">Dr. Reynolds is a leading expert in artificial intelligence ethics and machine learning. He recently developed an AI-driven ethical framework that helps ensure responsible AI deployment in industries like healthcare and finance.</p>
+                        <div class="card-content">
+                            <h3>Dr. Ethan Reynolds</h3>
+                            <p class="role">Professor, MIT | AI Specialist</p>
+                            <p class="bio">Leading expert in AI ethics and machine learning. Developed ethical frameworks for healthcare and finance.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                                <a href="#"><i class="ri-twitter-fill"></i></a>
+                                <a href="#"><i class="ri-global-line"></i></a>
+                            </div>
                         </div>
                     </div>
-                
-                    <div class="keynote-speaker">
-                        <div class="speaker-img">
+
+                    <!-- Speaker 2 -->
+                    <div class="speaker-card">
+                        <div class="card-image">
                             <img src="images/sophia carter.png" alt="Sophia Carter">
+                            <span class="keynote-badge">Keynote 2</span>
                         </div>
-                        <div class="speaker-details">
-                            <h5>Keynote 2: Sophia Carter</h5>
-                            <p class="job">CEO, CyberShield Solutions | Cybersecurity Strategist</p>
-                            <p class="bio">A pioneer in next-gen cybersecurity, Sophia Carter has spearheaded research on quantum-resistant encryption to counter future cyber threats. Her latest breakthrough involves an AI-powered threat detection system that prevents real-time cyberattacks with 98% accuracy.</p>
+                        <div class="card-content">
+                            <h3>Sophia Carter</h3>
+                            <p class="role">CEO, CyberShield Solutions</p>
+                            <p class="bio">Pioneer in quantum-resistant encryption and AI-powered threat detection systems.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                                <a href="#"><i class="ri-twitter-fill"></i></a>
+                                <a href="#"><i class="ri-global-line"></i></a>
+                            </div>
                         </div>
                     </div>
-                
-                    <div class="keynote-speaker">
-                        <div class="speaker-img">
+
+                    <!-- Speaker 3 -->
+                    <div class="speaker-card">
+                        <div class="card-image">
                             <img src="images/rafael moreno.png" alt="Dr. Rafael Moreno">
+                            <span class="keynote-badge">Keynote 3</span>
                         </div>
-                        <div class="speaker-details">
-                            <h5>Keynote 3: Dr. Rafael Moreno</h5>
-                            <p class="job">Blockchain Architect | Lead Developer, Web3 Innovations</p>
-                            <p class="bio">Dr. Moreno is revolutionizing decentralized finance (DeFi) and Web3 infrastructure. His most recent project, MetaLedger, is a blockchain protocol enabling instant, zero-fee transactions that pave the way for scalable and eco-friendly decentralized applications.</p>
+                        <div class="card-content">
+                            <h3>Dr. Rafael Moreno</h3>
+                            <p class="role">Blockchain Architect</p>
+                            <p class="bio">Revolutionizing DeFi with MetaLedger protocol for instant, zero-fee transactions.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                                <a href="#"><i class="ri-twitter-fill"></i></a>
+                                <a href="#"><i class="ri-global-line"></i></a>
+                            </div>
                         </div>
                     </div>
-            
-                    <div class="keynote-speaker">
-                        <div class="speaker-img">
+
+                    <!-- Speaker 4 -->
+                    <div class="speaker-card">
+                        <div class="card-image">
                             <img src="images/eva sinclair.png" alt="Ava Sinclair">
+                            <span class="keynote-badge">Keynote 4</span>
                         </div>
-                        <div class="speaker-details">
-                            <h5>Keynote 4: Ava Sinclair</h5>
-                            <p class="job">Tech Futurist & Founder, NeuroSync Labs</p>
-                            <p class="bio">Ava Sinclair is at the forefront of human-computer interaction. Her team recently unveiled NeuroSync, a brain-interface technology that allows users to control digital devices with neural signals—bringing us closer to a future where thoughts can seamlessly interact with machines.</p>
+                        <div class="card-content">
+                            <h3>Ava Sinclair</h3>
+                            <p class="role">Tech Futurist</p>
+                            <p class="bio">Created NeuroSync brain-interface technology for thought-controlled devices.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                                <a href="#"><i class="ri-twitter-fill"></i></a>
+                                <a href="#"><i class="ri-global-line"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <!--=============================== VENUE =============================-->
-        
-            <section id="venue" class="container">
-                <div class="section-title"><h2>CONFERENCE LOCATION </h2></div>
-                <div class="section-description"><p>The Perfect Venue for Innovation, Networking, and Groundbreaking Ideas</p></div>
-                <div class="venue-content">
-                    <div class="venue-name"><h3>SMX CONVENTION CENTER</h3></div>
-                    <div class="venue-address">
-                        <p>Mall of Asia Complex, Seashell Ln, Pasay, 1300 Metro Manila</p>
+            <section id="venue" class="venue-section">
+                <div class="section-header">
+                    <h2 class="section-title">CONFERENCE LOCATION</h2>
+                    <p class="section-tagline">The Perfect Venue for Innovation, Networking, and Groundbreaking Ideas</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="venue-container">
+                    <!-- Text Content -->
+                    <div class="venue-details">
+                        <div class="venue-card">
+                            <div class="venue-heading">
+                                <i class="ri-map-pin-fill venue-icon"></i>
+                                <h3>SMX CONVENTION CENTER</h3>
+                            </div>
+                            <div class="venue-address">
+                                <i class="ri-map-pin-line"></i>
+                                <p>Mall of Asia Complex, Seashell Ln, Pasay, 1300 Metro Manila</p>
+                            </div>
+                            <a href="https://maps.google.com/?q=SMX+Convention+Center+Mall+of+Asia" 
+                            class="venue-map-link" 
+                            target="_blank">
+                                View on Map <i class="ri-external-link-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="venue-description">
+                            <p>Strategically located in the heart of the Mall of Asia Complex in Pasay City, Philippines, SMX Convention Center is the perfect setting for TechFrontiers 2025.</p>
+                            <p>As the largest private venue in the Philippines for international exhibitions and industry conventions, it offers the ideal space for an immersive and large-scale technology conference.</p>
+                        </div>
+
+                        <div class="amenities-section">
+                            <h4><i class="ri-star-fill"></i> Venue Amenities</h4>
+                            <div class="amenities-grid">
+                                <div class="amenity-card">
+                                    <i class="ri-wifi-fill"></i>
+                                    <span>Free High-Speed Wi-Fi</span>
+                                </div>
+                                <div class="amenity-card">
+                                    <i class="ri-slideshow-fill"></i>
+                                    <span>Cutting-Edge AV Equipment</span>
+                                </div>
+                                <div class="amenity-card">
+                                    <i class="ri-group-fill"></i>
+                                    <span>Spacious Networking Areas</span>
+                                </div>
+                                <div class="amenity-card">
+                                    <i class="ri-restaurant-fill"></i>
+                                    <span>On-Site Catering</span>
+                                </div>
+                                <div class="amenity-card">
+                                    <i class="ri-parking-fill"></i>
+                                    <span>Ample Parking Space</span>
+                                </div>
+                                <div class="amenity-card">
+                                    <i class="ri-wheelchair-fill"></i>
+                                    <span>Wheelchair Accessible</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="venue-description">
-                        <p>Strategically located in the heart of the Mall of Asia Complex in Pasay City, Philippines, SMX Convention Center is the perfect setting for TechFrontiers 2025. </p>
-                        <p>As the largest private venue in the Philippines for international exhibitions and industry conventions, it offers the ideal space for an immersive and large-scale technology conference.</p>
+
+                    <!-- Image Gallery -->
+                    <div class="venue-gallery">
+                        <div class="gallery-main">
+                            <img src="images/smx interior design.png" alt="SMX Convention Center Interior Design" class="gallery-image">
+                        </div>
+                        <div class="gallery-secondary">
+                            <img src="images/smx outside.png" alt="SMX Convention Center Exterior" class="gallery-image">
+                            <img src="images/smx interior.png" alt="SMX Convention Center Interior" class="gallery-image">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           <!-- ===================== SCHEDULE SECTION ===================== -->
+            <section id="schedule" class="schedule-section">
+                <div class="section-header">
+                    <h2 class="section-title">CONFERENCE TIMELINE</h2>
+                    <p class="section-tagline">Three Days of Innovation, Learning, and Networking</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="schedule-container">
+                    <!-- Day Navigation -->
+                    <div class="day-selector">
+                        <button class="day-tab active" data-day="day1">Day 1: The Future Begins</button>
+                        <button class="day-tab" data-day="day2">Day 2: Innovation in Action</button>
+                        <button class="day-tab" data-day="day3">Day 3: Shaping the Future</button>
                     </div>
 
-                    <div class="venue-ameneties">
-                        <h4>Venue Ameneties</h4>
-                        <ul class="amaeneties-list">
-                            <li class="ameneties-item">
-                                <div class="feature-content">
-                                    <i class="ri-checkbox-circle-line"></i>
-                                    <p>Free High-Speed Wi-Fi</p>
-                                </div>
-                            </li>
+                    <!-- Day 1 Schedule -->
+            <div class="day-schedule active" id="day1">
+                <!-- Registration -->
+                <div class="schedule-card">
+                    <div class="time-block">
+                        <span class="time">08:00 - 09:30</span>
+                        <span class="session-type">Registration</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Registration and Welcome Coffee</h3>
+                        <p class="session-description">Attendees check in, network, and explore the venue</p>
+                    </div>
+                </div>
 
-                            <li class="ameneties-item">
-                                <div class="feature-content">
-                                    <i class="ri-checkbox-circle-line"></i>
-                                    <p>Cutting-Edge Audio-Visual Equipment</p>
-                                </div>
-                            </li>
+                <!-- Opening Keynote -->
+                <div class="schedule-card keynote">
+                    <div class="time-block">
+                        <span class="time">09:30 - 10:30</span>
+                        <span class="session-type">Keynote</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">AI & The Future of Innovation</h3>
+                        <p class="session-speaker">Dr. Ethan Reynolds</p>
+                        <p class="session-description">A deep dive into the future of AI and its ethical implications</p>
+                    </div>
+                </div>
 
-                            <li class="ameneties-item">
-                                <div class="feature-content">
-                                    <i class="ri-checkbox-circle-line"></i>
-                                    <p>Spacious Lounge & Networking Areas</p>
-                                </div>
-                            </li>
+                <!-- Morning Break -->
+                <div class="schedule-card break">
+                    <div class="time-block">
+                        <span class="time">10:30 - 10:45</span>
+                        <span class="session-type">Break</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Morning Networking Break</h3>
+                        <p class="session-description">Refreshments served in the exhibition area</p>
+                    </div>
+                </div>
 
-                            <li class="ameneties-item">
-                                <div class="feature-content">
-                                    <i class="ri-checkbox-circle-line"></i>
-                                    <p>On-Site Catering Services</p>
-                                </div>
-                            </li>
+                <!-- Panel Discussion -->
+                <div class="schedule-card">
+                    <div class="time-block">
+                        <span class="time">10:45 - 12:00</span>
+                        <span class="session-type">Panel</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">The State of Cybersecurity in 2025</h3>
+                        <p class="session-description">Industry experts discuss the latest threats and defenses in cybersecurity</p>
+                    </div>
+                </div>
 
-                            <li class="ameneties-item">
-                                <div class="feature-content">
-                                    <i class="ri-checkbox-circle-line"></i>
-                                    <p>Ample Parking Space</p>
-                                </div>
-                            </li>
+                <!-- Lunch -->
+                <div class="schedule-card meal">
+                    <div class="time-block">
+                        <span class="time">12:00 - 13:30</span>
+                        <span class="session-type">Lunch</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Lunch Break & Networking</h3>
+                        <p class="session-description">Attendees connect over lunch and visit exhibition booths</p>
+                    </div>
+                </div>
+
+                <!-- Breakout Sessions -->
+                <div class="schedule-card workshop">
+                    <div class="time-block">
+                        <span class="time">13:30 - 14:30</span>
+                        <span class="session-type">Workshop</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Breakout Sessions (Choose one)</h3>
+                        <ul class="session-options">
+                            <li>Blockchain & Web3 Innovations</li>
+                            <li>AI & Automation in Business</li>
+                            <li>The Rise of Quantum Computing</li>
                         </ul>
                     </div>
                 </div>
-            </section>
 
-            <!--=============================== SCHEDULE =============================-->
-
-            <section id="venue" class="container">
-                <div class="section-title"><h2>CONFERENCE TIMELINE </h2></div>
-                <div class="section-description"><p>The Perfect Venue for Innovation, Networking, and Groundbreaking Ideas</p></div>
-                <div class="timeline-content">
-                    <div class="timeline-grid">
-                        <div class="grid-item">
-                            <i class="ri-calendar-schedule-line"></i>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-title">
-                                <h4 class="day">Day 1</h4>
-                                <p class="day-theme">The Future Begins (April 15)</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-title">
-                                <h4 class="day">Day 2</h4>
-                                <p class="day-theme">Innovation in Action (April 16)</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="grid-item-title">
-                                <h4 class="day">Day 3</h4>
-                                <p class="day-theme">Shaping the Future (April 17)</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="exact-time">08:00-09:30 AM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Registration and Welcome Coffee</h5>
-                                <p class="topic-description">Attendees check in, network, and explore the venue.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Morning Coffee & Networking</h5>
-                                <p class="topic-description">A chance to connect before the sessions begin.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Morning Coffee & Networking</h5>
-                                <p class="topic-description">Attendees connect before the final day kicks off.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="keynote-time">09:30-10:30 AM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="keynote-topic"> Opening Keynote: "AI & The Future of Innovation" </h5>
-                                <p class="keynote-speaker">– Dr. Ethan Reynolds</p>
-                                <p class="keynote-description">A deep dive into the future of AI and its ethical implications.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="keynote-topic"> Keynote: "Cybersecurity in the Age of AI"</h5>
-                                <p class="keynote-speaker">– Sophia Carter</p>
-                                <p class="keynote-description">The latest AI-powered cybersecurity trends and defense strategies.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="keynote-topic"> Keynote: "The Next Decade of AI & Robotics"</h5>
-                                <p class="keynote-speaker">– Dr. Ethan Reynolds</p>
-                                <p class="keynote-description">A visionary look at how AI and robotics will evolve by 2035.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="exact-time">10:45-12:00 PM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Panel Discussion: "The State of Cybersecurity in 2025"</h5>
-                                <p class="topic-description">Industry experts discuss the latest threats and defenses in cybersecurity.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Hands-on Workshops (Choose one:)</h5>
-                                <ol class="topic-list">
-                                    <li>Ethical AI Development</li>
-                                    <li>Cybersecurity Threat Simulation</li>
-                                    <li>Blockchain Smart Contracts</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Breakout Sessions (Choose one:)</h5>
-                                <ol class="topic-list">
-                                    <li>Future of Cloud & Edge Computing</li>
-                                    <li>Ethical Hacking & Cybersecurity</li>
-                                    <li>Metaverse & AR/VR Innovations</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="exact-time">12:00-01:30 PM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Lunch Break & Networking</h5>
-                                <p class="topic-description">Attendees connect over lunch and visit exhibition booths.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Lunch Break & Networking</h5>
-                                <p class="topic-description">A discussion on the key takeaways and predictions for the future.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="exact-time">01:30-02:30 PM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Breakout Sessions (Choose one:)</h5>
-                                <ol class="topic-list">
-                                    <li>Blockchain & Web3 Innovations</li>
-                                    <li>AI & Automation in Business</li>
-                                    <li>The Rise of Quantum Computing</li>
-                                </ol>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Tech Trends Roundtable</h5>
-                                <p class="topic-description">Experts debate the next big innovations shaping technology.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Industry Panel: "What’s Next for Tech?"</h5>
-                                <p class="topic-description">Attendees check in, network, and explore the venue.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="keynote-time">02:45-03:45 PM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="keynote-topic">Keynote: "Decentralized Finance & Web3" – Dr. Rafael Moreno"</h5>
-                                <p class="keynote-speaker">– Dr. Rafael Moreno</p>
-                                <p class="keynote-description">Exploring the future of blockchain, DeFi, and digital assets.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="keynote-topic">Keynote: "Human-Machine Integration"</h5>
-                                <p class="keynote-speaker">– Ava Sinclair</p>
-                                <p class="keynote-description">A discussion on brain-computer interfaces and the next frontier in human-computer interaction.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="keynote-topic">Closing Keynote: "Technology & Humanity – The Road Ahead"</h5>
-                                <p class="keynote-speaker">– Ava Sinclair</p>
-                                <p class="keynote-description">Exploring the intersection of technology and human progress.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="exact-time">04:00-05:30 PM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Registration & Welcome Coffee</h5>
-                                <p class="topic-description">Tech Demos & Startup Showcase.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Hackathon & Pitch Competition</h5>
-                                <p class="topic-description">Teams present their tech solutions in a fast-paced innovation challenge.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Awarding & Closing Remarks</h5>
-                                <p class="topic-description">A wrap-up of key insights, announcements, and appreciation for participants.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="time">
-                                <p class="exact-time">05:30-07:00 PM</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">Welcome Reception & Networking Night</h5>
-                                <p class="topic-description">Attendees mingle and engage with speakers in an informal setting.</p>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="topic">
-                                <h5 class="topic-title">VIP Networking Dinner (Invite-Only)</h5>
-                                <p class="topic-description">An exclusive networking session with top speakers and industry leaders.</p>
-                            </div>
-                        </div>
+                <!-- Afternoon Break -->
+                <div class="schedule-card break">
+                    <div class="time-block">
+                        <span class="time">14:30 - 14:45</span>
+                        <span class="session-type">Break</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Afternoon Refreshments</h3>
                     </div>
                 </div>
-            </section>
-            
-            <!--=============================== registration =============================-->
-            <section id="registration" class="registration-packages">
-                <div class="section-title"><h2>Join Us at TechFrontiers 2025</h2></div>
-                <div class="section-description"><p>Secure your spot at the most anticipated tech event of the year</p></div>
-                <div class="registration-content">
-                    <div class="registration-buttons">
-                        <a href="#" class="btn">Standard Pass - Php599</a>
-                        <a href="#" class="btn">VIP Pass - Php999</a>
+
+                <!-- Decentralized Finance Keynote -->
+                <div class="schedule-card keynote">
+                    <div class="time-block">
+                        <span class="time">14:45 - 15:45</span>
+                        <span class="session-type">Keynote</span>
                     </div>
-                    <p>Early bird pricing ends April 3, 2025. Group discounts avaiable for teams of 3 or more.</p>
+                    <div class="session-details">
+                        <h3 class="session-title">Decentralized Finance & Web3</h3>
+                        <p class="session-speaker">Dr. Rafael Moreno</p>
+                        <p class="session-description">Exploring the future of blockchain, DeFi, and digital assets</p>
+                    </div>
                 </div>
 
+                <!-- Tech Demos -->
+                <div class="schedule-card">
+                    <div class="time-block">
+                        <span class="time">16:00 - 17:30</span>
+                        <span class="session-type">Exhibition</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Tech Demos & Startup Showcase</h3>
+                        <p class="session-description">Interactive demonstrations of cutting-edge technologies</p>
+                    </div>
+                </div>
+
+                <!-- Welcome Reception -->
+                <div class="schedule-card social">
+                    <div class="time-block">
+                        <span class="time">17:30 - 19:00</span>
+                        <span class="session-type">Social</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Welcome Reception & Networking Night</h3>
+                        <p class="session-description">Attendees mingle and engage with speakers in an informal setting</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 Schedule -->
+            <div class="day-schedule" id="day2">
+                <!-- Morning Coffee -->
+                <div class="schedule-card">
+                    <div class="time-block">
+                        <span class="time">08:00 - 09:00</span>
+                        <span class="session-type">Networking</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Morning Coffee & Networking</h3>
+                        <p class="session-description">A chance to connect before the sessions begin</p>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Keynote -->
+                <div class="schedule-card keynote">
+                    <div class="time-block">
+                        <span class="time">09:00 - 10:00</span>
+                        <span class="session-type">Keynote</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Cybersecurity in the Age of AI</h3>
+                        <p class="session-speaker">Sophia Carter</p>
+                        <p class="session-description">The latest AI-powered cybersecurity trends and defense strategies</p>
+                    </div>
+                </div>
+
+                <!-- Morning Break -->
+                <div class="schedule-card break">
+                    <div class="time-block">
+                        <span class="time">10:00 - 10:15</span>
+                        <span class="session-type">Break</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Morning Refreshments</h3>
+                    </div>
+                </div>
+
+                <!-- Hands-on Workshops -->
+                <div class="schedule-card workshop">
+                    <div class="time-block">
+                        <span class="time">10:15 - 12:00</span>
+                        <span class="session-type">Workshop</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Hands-on Workshops (Choose one)</h3>
+                        <ul class="session-options">
+                            <li>Ethical AI Development</li>
+                            <li>Cybersecurity Threat Simulation</li>
+                            <li>Blockchain Smart Contracts</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Lunch -->
+                <div class="schedule-card meal">
+                    <div class="time-block">
+                        <span class="time">12:00 - 13:30</span>
+                        <span class="session-type">Lunch</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Lunch Break & Networking</h3>
+                        <p class="session-description">A discussion on the key takeaways and predictions for the future</p>
+                    </div>
+                </div>
+
+                <!-- Tech Trends Roundtable -->
+                <div class="schedule-card panel">
+                    <div class="time-block">
+                        <span class="time">13:30 - 14:30</span>
+                        <span class="session-type">Panel</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Tech Trends Roundtable</h3>
+                        <p class="session-description">Experts debate the next big innovations shaping technology</p>
+                    </div>
+                </div>
+
+                <!-- Afternoon Break -->
+                <div class="schedule-card break">
+                    <div class="time-block">
+                        <span class="time">14:30 - 14:45</span>
+                        <span class="session-type">Break</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Afternoon Coffee Break</h3>
+                    </div>
+                </div>
+
+                <!-- Human-Machine Keynote -->
+                <div class="schedule-card keynote">
+                    <div class="time-block">
+                        <span class="time">14:45 - 15:45</span>
+                        <span class="session-type">Keynote</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Human-Machine Integration</h3>
+                        <p class="session-speaker">Ava Sinclair</p>
+                        <p class="session-description">Brain-computer interfaces and the next frontier in human-computer interaction</p>
+                    </div>
+                </div>
+
+                <!-- Hackathon -->
+                <div class="schedule-card workshop">
+                    <div class="time-block">
+                        <span class="time">16:00 - 17:30</span>
+                        <span class="session-type">Competition</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Hackathon & Pitch Competition</h3>
+                        <p class="session-description">Teams present their tech solutions in a fast-paced innovation challenge</p>
+                    </div>
+                </div>
+
+                <!-- VIP Dinner -->
+                <div class="schedule-card social">
+                    <div class="time-block">
+                        <span class="time">19:00 - 21:00</span>
+                        <span class="session-type">Social</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">VIP Networking Dinner (Invite-Only)</h3>
+                        <p class="session-description">An exclusive networking session with top speakers and industry leaders</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 Schedule -->
+            <div class="day-schedule" id="day3">
+                <!-- Morning Coffee -->
+                <div class="schedule-card">
+                    <div class="time-block">
+                        <span class="time">08:00 - 09:00</span>
+                        <span class="session-type">Networking</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Morning Coffee & Networking</h3>
+                        <p class="session-description">Attendees connect before the final day kicks off</p>
+                    </div>
+                </div>
+
+                <!-- AI & Robotics Keynote -->
+                <div class="schedule-card keynote">
+                    <div class="time-block">
+                        <span class="time">09:00 - 10:00</span>
+                        <span class="session-type">Keynote</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">The Next Decade of AI & Robotics</h3>
+                        <p class="session-speaker">Dr. Ethan Reynolds</p>
+                        <p class="session-description">A visionary look at how AI and robotics will evolve by 2035</p>
+                    </div>
+                </div>
+
+                <!-- Morning Break -->
+                <div class="schedule-card break">
+                    <div class="time-block">
+                        <span class="time">10:00 - 10:15</span>
+                        <span class="session-type">Break</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Morning Refreshments</h3>
+                    </div>
+                </div>
+
+                <!-- Breakout Sessions -->
+                <div class="schedule-card workshop">
+                    <div class="time-block">
+                        <span class="time">10:15 - 11:30</span>
+                        <span class="session-type">Workshop</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Breakout Sessions (Choose one)</h3>
+                        <ul class="session-options">
+                            <li>Future of Cloud & Edge Computing</li>
+                            <li>Ethical Hacking & Cybersecurity</li>
+                            <li>Metaverse & AR/VR Innovations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Industry Panel -->
+                <div class="schedule-card panel">
+                    <div class="time-block">
+                        <span class="time">11:30 - 12:30</span>
+                        <span class="session-type">Panel</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Industry Panel: "What's Next for Tech?"</h3>
+                        <p class="session-description">Leaders discuss emerging trends and future predictions</p>
+                    </div>
+                </div>
+
+                <!-- Lunch -->
+                <div class="schedule-card meal">
+                    <div class="time-block">
+                        <span class="time">12:30 - 14:00</span>
+                        <span class="session-type">Lunch</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Lunch Break & Networking</h3>
+                        <p class="session-description">Final opportunity to connect with speakers and attendees</p>
+                    </div>
+                </div>
+
+                <!-- Closing Keynote -->
+                <div class="schedule-card keynote">
+                    <div class="time-block">
+                        <span class="time">14:00 - 15:00</span>
+                        <span class="session-type">Keynote</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Technology & Humanity – The Road Ahead</h3>
+                        <p class="session-speaker">Ava Sinclair</p>
+                        <p class="session-description">Exploring the intersection of technology and human progress</p>
+                    </div>
+                </div>
+
+                <!-- Closing Ceremony -->
+                <div class="schedule-card special">
+                    <div class="time-block">
+                        <span class="time">15:15 - 16:30</span>
+                        <span class="session-type">Special</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Awarding & Closing Remarks</h3>
+                        <p class="session-description">Wrap-up of key insights, announcements, and appreciation for participants</p>
+                        <ul class="session-options">
+                            <li>Hackathon winners announced</li>
+                            <li>Best presenter awards</li>
+                            <li>Closing thoughts from organizers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Farewell Reception -->
+                <div class="schedule-card social">
+                    <div class="time-block">
+                        <span class="time">16:30 - 18:00</span>
+                        <span class="session-type">Social</span>
+                    </div>
+                    <div class="session-details">
+                        <h3 class="session-title">Farewell Reception</h3>
+                        <p class="session-description">Celebrate the conclusion of TechFrontiers 2025 with drinks and networking</p>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </section>
+          
+            <!-- ===================== REGISTRATION SECTION ===================== -->
+            <section id="registration" class="registration-section">
+                <div class="section-header">
+                    <h2 class="section-title">Join Us at TechFrontiers 2025</h2>
+                    <p class="section-tagline">Secure your spot at the most anticipated tech event of the year</p>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="registration-container">
+                    <!-- Standard Pass -->
+                    <div class="registration-card">
+                        <div class="pass-header">
+                            <h3>Standard Pass</h3>
+                            <div class="price">₱5,999</div>
+                            <p class="early-bird">Early Bird: ₱4,999 (until April 3)</p>
+                        </div>
+                        <ul class="pass-features">
+                            <li><i class="ri-checkbox-circle-fill"></i> Full 3-day conference access</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Keynote sessions</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Workshop participation</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Conference materials</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Networking opportunities</li>
+                        </ul>
+                        <a href="#" class="register-btn standard-btn">Register Now</a>
+                    </div>
+
+                    <!-- VIP Pass -->
+                    <div class="registration-card vip">
+                        <div class="pass-header">
+                            <h3>VIP Pass</h3>
+                            <div class="price">₱9,999</div>
+                            <p class="early-bird">Early Bird: ₱7,999 (until April 3)</p>
+                            <div class="vip-badge">Most Popular</div>
+                        </div>
+                        <ul class="pass-features">
+                            <li><i class="ri-checkbox-circle-fill"></i> <strong>All Standard benefits</strong></li>
+                            <li><i class="ri-checkbox-circle-fill"></i> VIP seating at keynotes</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Exclusive networking dinner</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Meet & greet with speakers</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Premium conference swag</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Priority workshop registration</li>
+                        </ul>
+                        <a href="#" class="register-btn vip-btn">Register Now</a>
+                    </div>
+
+                    <!-- Group Option -->
+                    <div class="registration-card group">
+                        <div class="pass-header">
+                            <h3>Group Package</h3>
+                            <div class="price">₱4,499<span>/person</span></div>
+                            <p class="early-bird">3+ attendees (Save 25%)</p>
+                        </div>
+                        <ul class="pass-features">
+                            <li><i class="ri-checkbox-circle-fill"></i> <strong>All Standard benefits</strong></li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Dedicated team seating</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Group discount</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Team networking opportunities</li>
+                            <li><i class="ri-checkbox-circle-fill"></i> Bulk registration processing</li>
+                        </ul>
+                        <a href="#" class="register-btn group-btn">Register Team</a>
+                    </div>
+                </div>
+
+                <div class="registration-footer">
+                    <p><i class="ri-alarm-warning-line"></i> Early bird pricing ends April 3, 2025</p>
+                    <p><i class="ri-team-line"></i> Special rates available for academic groups and startups</p>
+                </div>
             </section>
 
             <!--=============================== FOOTER =============================-->
             <footer class="footer">
-                <div class="container">
-                    <div class="footer-grid">
-                        <div class="footer-about">
-                            <a href="#" class="logo footer-logo">
-                                <i class="ri-bubble-chart-line">
-                                <span class="logo-text">TechCon<span style="color: var(--accent-color);">2024</span></span>
+                <div class="footer-container">
+                    <!-- Main Footer Content -->
+                    <div class="footer-content">
+                        <!-- Brand Column -->
+                        <div class="footer-brand">
+                            <a href="#" class="footer-logo">
+                                <i class="ri-cpu-line"></i>
+                                <span class="logo-text">
+                                    <span class="logo-primary">Tech</span>Frontiers<span class="logo-year">2025</span>
+                                </span>
                             </a>
-                            <p>The premier technology conference bringing together innovators, thought leaders, and tech enthusiasts from around the world.</p>
-                            <div class="footer-social">
-                                <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
-                                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
-                                <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                            <p class="footer-description">
+                                The premier technology conference bringing together innovators, thought leaders, 
+                                and tech enthusiasts from around the world.
+                            </p>
+                            <div class="social-links">
+                                <a href="#" class="social-icon" aria-label="Twitter">
+                                    <i class="ri-twitter-x-fill"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Facebook">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="LinkedIn">
+                                    <i class="ri-linkedin-fill"></i>
+                                </a>
+                                <a href="#" class="social-icon" aria-label="Instagram">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
                             </div>
                         </div>
-                        
-                        <div class="footer-links">
-                            <h5>Quick Links</h5>
-                            <ul>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#speakers">Speakers</a></li>
-                                <li><a href="#venue">Venue</a></li>
-                                <li><a href="#schedule">Schedule</a></li>
-                                <li><a href="#registration">Registration</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-links">
-                            <h5>Resources</h5>
-                            <ul>
-                                <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Sponsor Information</a></li>
-                                <li><a href="#">Call for Speakers</a></li>
-                                <li><a href="#">Past Events</a></li>
-                                <li><a href="#">Media Kit</a></li>
-                            </ul>
-                        </div>
-                        
-                        <div class="footer-links">
-                            <h5>Contact Us</h5>
-                            <ul class="contact-info">
-                                <li>
-                                    <i class="bi bi-envelope"></i>
-                                    <span>info@techcon2024.com</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-telephone"></i>
-                                    <span>+1 (555) 123-4567</span>
-                                </li>
-                                <li>
-                                    <i class="bi bi-geo-alt"></i>
-                                    <span>123 Innovation Blvd, Manila, BGC 94105</span>
-                                </li>
-                            </ul>
+            
+                        <!-- Navigation Links -->
+                        <div class="footer-nav">
+                            <div class="nav-column">
+                                <h5 class="footer-heading">Quick Links</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#speakers">Speakers</a></li>
+                                    <li><a href="#venue">Venue</a></li>
+                                    <li><a href="#schedule">Schedule</a></li>
+                                    <li><a href="#registration">Registration</a></li>
+                                </ul>
+                            </div>
+            
+                            <div class="nav-column">
+                                <h5 class="footer-heading">Resources</h5>
+                                <ul class="footer-menu">
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">Sponsor Info</a></li>
+                                    <li><a href="#">Call for Speakers</a></li>
+                                    <li><a href="#">Past Events</a></li>
+                                    <li><a href="#">Media Kit</a></li>
+                                </ul>
+                            </div>
+            
+                            <div class="nav-column">
+                                <h5 class="footer-heading">Contact</h5>
+                                <ul class="footer-contact">
+                                    <li>
+                                        <i class="ri-mail-line"></i>
+                                        <span>info@techfrontiers2025.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-phone-line"></i>
+                                        <span>+63 (2) 8123-4567</span>
+                                    </li>
+                                    <li>
+                                        <i class="ri-map-pin-2-line"></i>
+                                        <span>SMX Convention Center, Pasay, Metro Manila</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    
-                    <div class="copyright">
-                        <p>&copy; 2025 TechFrontiers2025. All rights reserved. | <a href="#" style="color: inherit;">Privacy Policy</a> | <a href="#" style="color: inherit;">Terms & Conditions</a></p>
+            
+                    <!-- Copyright Section -->
+                    <div class="footer-bottom">
+                        <p class="copyright">
+                            &copy; 2025 TechFrontiers. All rights reserved.
+                            <span class="legal-links">
+                                <a href="#">Privacy Policy</a>
+                                <a href="#">Terms of Service</a>
+                                <a href="#">Code of Conduct</a>
+                            </span>
+                        </p>
                     </div>
                 </div>
             </footer>
-            
-        </main>
-        
+        </main>       
     </body>
 </head>
