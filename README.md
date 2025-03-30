@@ -10,7 +10,7 @@ A static webpage built with HTML and CSS to promote a conference, providing esse
 - **Speakers**: Speaker profiles with images, names, and short bios  
 - **Venue**: Venue details with images  
 - **Schedule**: Key events, dates, and time slots  
-- **Registration**: "Register Now" button linking to a form with Regular and VIP options  
+- **Registration**: "Register Now" button linking to a form with Standard, VIP and Group Pass options  
 - **Footer**: Contact details, copyright info  
 
 ## Technologies Used  
